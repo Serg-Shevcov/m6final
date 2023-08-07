@@ -1,0 +1,119 @@
+.brand,
+.technique {
+    margin: 0;
+    background: $backbody;
+
+    .swiper {
+        width: 240px;
+        height: 100px;
+        padding-top: 10px; 
+    }
+
+}
+
+.brand__heder,
+.technique__heder {    
+    background: linear-gradient(90deg, $backbody 0%, $back 100%);
+    width: 296px;
+    font-size: 16px;
+    font-family: "TTLakes";
+    color: $coltext;
+    font-weight: 400;    
+    padding: 12px;
+}
+
+.brand__check, .brand__label, .brand__icon,
+.technique__check, .technique__label, .technique__icon {
+    display: none;
+}
+
+@media (min-width: 321px) {
+
+    .brand__check, .brand__label, .brand__icon,
+    .technique__check, .technique__label, .technique__icon {
+        display: block;
+    }
+
+    .brand,
+    .technique {
+        margin: 30px 0;
+        background: $backbody;
+        display: flex;
+        flex-direction: column;
+
+        .swiper {
+            min-height: 182px;
+            height: auto;
+            width: 100%;
+        }
+        
+    }
+    
+    .brand__heder,
+    .technique__heder {    
+        width: 100%;
+    }
+
+    .swiper-wrapper {
+        height: 182px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow: hidden;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+    }
+    
+    .brand__img,
+    .technique__img {
+        width: 224px;
+        height: 72px;
+        padding: 8px 10px;
+    }
+
+    .brand__label,
+    .technique__label {
+        font-size: 16px;
+        font-family: "TTLakes";
+        cursor: pointer;
+        margin: 0;
+        padding-left: 40px;
+        font-weight: 500;
+        color: $colh2;
+    }
+    
+    .brand__icon,
+    .technique__icon  {
+        width: 24px;
+        height: 24px;
+        padding: 0 0 0 10px;
+        position: relative;
+        top: 22px;
+    }
+
+    .brand__check,
+    .technique__check {
+        display: none;
+    }
+        
+    .brand__check:checked ~.swiper-wrapper {
+        height: 100%;
+    }
+
+    .brand__check:checked ~.brand__icon {
+        transform: rotate(180deg);
+        padding: 0 10px 0 0;
+    }
+
+    .technique__check:checked ~.swiper-wrapper {
+        height: 100%;
+    }
+        
+    .technique__check:checked ~.technique__icon {
+        transform: rotate(180deg);
+        padding: 0 10px 0 0;
+    }
+}
