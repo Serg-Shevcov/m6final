@@ -1,0 +1,57 @@
+footer {
+    margin-top: 50px;
+}
+
+.basement {
+    margin: 0 4px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.basement_bloc {
+    padding: 8px 4px;
+}
+
+.basement_text {
+    color: $coltext;
+    text-align: center;
+    font-family: TTLakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    opacity: 0.7;
+}
+
+hr {
+    width: 100vw;
+    height: 1px;
+    flex-shrink: 0;
+    background: $coltext;
+}
+
+@media (min-width: 768px) {
+    
+    .basement {
+        margin: 0 24px;
+        flex-direction: inherit;
+        justify-content: space-between;
+    }
+
+    .basement_bloc {
+        width: 33%;
+    }
+
+    .basement_bloc-left {
+        text-align: left;
+    }
+
+    .basement_bloc-center {
+        text-align: center;
+    }
+
+    .basement_bloc-right {
+        text-align: right;
+    }
+}
