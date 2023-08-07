@@ -1,0 +1,73 @@
+.pops-up {
+    display: flex;
+    padding: 16px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+    justify-content: space-between;
+    background: $back;
+    position: fixed;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    top: 0;
+    left: -400px;
+    transition: left 1s;
+    z-index: 2;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -ms-transition: left 1s;
+    -o-transition: left 1s;
+}
+
+.pops-up,
+.pops-up__meny,
+.mail,
+.pops-up__top-part,
+.pops-up__bottom-part {
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pops-up__button {
+    cursor: pointer;
+    margin-right: 12px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background: $back;
+    height: 40px;
+    text-align: left;
+    transition: 1s;
+}
+
+.pops-up__button:hover {
+    filter: opacity(0.5);
+    border-left: 4px solid $bordleft;
+}
+
+.pops-up__icon {
+    padding: 8px;
+}
+
+.pops-up__header {
+    justify-content: space-between;
+}
+
+.namber {
+    font-weight: 700;
+}
+
+.hidden-menu-burger {
+    display: none;
+}
+
+.hidden-menu-burger:checked~.pops-up {
+    left: 0;
+}
