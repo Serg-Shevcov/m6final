@@ -5,10 +5,21 @@
 
     .swiper {
         width: 240px;
-        height: 100px;
         padding-top: 10px; 
     }
 
+}
+
+.brand {
+    .swiper {
+        height: 100px;
+    }
+}
+
+.technique {
+    .swiper {
+        height: 200px;
+    }
 }
 
 .brand__heder,
