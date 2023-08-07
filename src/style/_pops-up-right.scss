@@ -1,0 +1,134 @@
+.request-a-call,
+.feedback {
+  display: block;
+  position: fixed;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 300px;
+  background: $back;
+  height: 100%;
+  top: 0;
+  box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  right: -400px;
+  transition: right 1s;
+  // overflow-y: auto;
+  z-index: 2;
+}
+
+.request-a-call__head,
+.feedback__head {
+  position: relative;
+}
+
+.hidden-menu-call:checked~.request-a-call, .request-a-call__exit {
+  right: 0;
+}
+
+.hidden-menu-chat:checked~.feedback, .feedback__exit {
+  right: 0;
+}
+
+.request-a-call__exit,
+.feedback__exit {
+  padding: 24px 16px;
+}
+
+.request-a-call__button,
+.feedback__button {
+  float: right;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background: $back-bt;
+}
+
+.request-a-call__text-button,
+.feedback__text-button {
+  margin-left: 12px;
+  font-family: "TTLakes";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $back;
+}
+
+.request-a-call__text,
+.feedback__text {
+  color: $coltext;
+  font-family: "TTLakes";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.request-a-call__number,
+.feedback__input  {
+
+  label {
+    
+    input {
+      padding: 0;
+      margin: 8px 14px;
+      color: $colin;
+      font-family: "TTLakes";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      border-radius: 8px;
+      border: 1px solid $colborder;
+      width: 270px;
+      height: 48px;
+    }
+  }
+
+}
+
+.request-a-call__input,
+.feedback__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-a-call__text,
+.feedback__text {
+  margin-left: 16px;
+}
+
+.request-a-call__article,
+.feedback__article {
+  padding-left: 10px;
+  border-left: 4px solid $bordleft;
+  color: $colh2;
+  font-family: "TTLakes";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.colortext {
+  color: $red;
+}
+
+#post {
+  height: 118px;
+}
+
+.hidden-menu-chat, .hidden-menu-call {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  
+  .request-a-call__exit,
+  .feedback__exit {
+    position: absolute;
+    left: -100px;
+    top: -28px;
+  }
+
+}
