@@ -70,8 +70,15 @@
     .brand__img,
     .technique__img {
         width: 224px;
-        height: 72px;
         padding: 8px 10px;
+    }
+
+    .brand__img {
+        height: 72px;
+    }
+
+    .technique__img {
+        height: 160px;
     }
 
     .brand__label,
